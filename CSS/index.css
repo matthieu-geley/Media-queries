@@ -1,0 +1,362 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	background-image: url(../IMG/ACCUEIL/BACKGROUND/map.png);
+	width: 100vw;
+	height: 1300px;
+	background-size: cover;
+}
+header {
+    background-image: url(../IMG/HEADER/banniere2.png);
+    opacity: 0.8;
+    width: 100vw;
+    height: 250px;
+}
+.nuage {
+    position: absolute;
+    z-index: 1;
+    left: 270px;
+    top: 40px;
+    width: auto;
+    height: 115px;
+}
+.nuage2 {
+    position: absolute;
+    z-index: 1;
+    left: 1110px;
+    top: 10px;
+    width: auto;
+    height: 155px;
+}
+.diaporama1 {
+	display: none;
+}
+.diaporama2 {
+	display: none;
+}
+.diaporama3 {
+	display: none;
+}
+.diaporama4 {
+	display: none;
+}
+.diaporama5 {
+    display: none;
+}
+.diaporama6 {
+	display: none;
+}
+input[type=checkbox] {
+display:none;
+}
+#btnControl + #label1
+{
+background: url(../IMG/ACCUEIL/DRAPEAUX/drapeau-coree.png) no-repeat;
+background-size: 50%;
+position: absolute;
+height: 15%;
+width: 9%;
+left: 1468px;
+top: 752px;
+display:inline-block;
+z-index: 8;
+}
+#btnControl:checked + #label1 .diaporama1
+{
+	display: inline-block;
+	margin-left: -850px;
+	margin-top: -450px;
+    width: 900px;
+    height: 900px;
+    background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SOUTH-KOREA/coree-temple.png);
+    background-size: cover;
+
+    -webkit-animation-name: diaporama1;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running ;
+
+   -moz-animation-name: diaporama1;
+    -moz-animation-duration: 10s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+
+    animation-name: diaporama1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running ;
+    z-index: 20;
+}
+#btnContro2 + #label2
+{
+background: url(../IMG/ACCUEIL/DRAPEAUX/drapeau-japon.png) no-repeat;
+background-size: 50%;
+position: absolute;
+height: 15%;
+width: 10%;
+left: 1598px;
+top: 762px;
+display:inline-block;
+z-index: 10;
+}
+#btnContro2:checked + #label2 .diaporama2
+{
+	display: inline-block;
+	margin-left: -1050px;
+	margin-top: -450px;
+    width: 900px;
+    height: 900px;
+    background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/JAPAN/japon-fuji.png);
+    background-size: cover;
+
+    -webkit-animation-name: diaporama2;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running ;
+
+   -moz-animation-name: diaporama2;
+    -moz-animation-duration: 10s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+
+    animation-name: diaporama2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running ;
+    z-index: 21;
+}
+#btnContro3 + #label3 
+{
+background: url(../IMG/ACCUEIL/DRAPEAUX/drapeau-italie.png) no-repeat;
+background-size: 50%;
+position: absolute;
+height: 15%;
+width: 10%;
+left: 979px;
+top: 738px;
+display:inline-block;
+z-index: 1;
+}
+#btnContro3:checked + #label3 .diaporama3
+{
+	display: inline-block;
+	margin-left: -350px;
+	margin-top: -450px;
+    width: 800px;
+    height: 900px;
+    background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/ITALY/italie-pise.png);
+    background-size: cover;
+
+    -webkit-animation-name: diaporama3;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running ;
+
+   -moz-animation-name: diaporama3;
+    -moz-animation-duration: 10s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+
+    animation-name: diaporama3;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running ;
+    z-index: 22;
+}
+
+#btnContro4 + #label4
+{
+background: url(../IMG/ACCUEIL/DRAPEAUX/drapeau-ecosse.png) no-repeat;
+background-size: 50%;
+position: absolute;
+height: 15%;
+width: 10%;
+left: 808px;
+top: 622px;
+display:inline-block;
+z-index: 5;
+
+}
+#btnContro4:checked + #label4 .diaporama4
+{
+	display: inline-block;
+	margin-left: -350px;
+	margin-top: -300px;
+    width: 900px;
+    height: 900px;
+    background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SCOTLAND/ecosse-chateau.png);
+    background-size: cover;
+
+    -webkit-animation-name: diaporama4;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running ;
+
+   -moz-animation-name: diaporama4;
+    -moz-animation-duration: 10s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+
+    animation-name: diaporama4;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running ;
+    z-index: 23;
+}
+#btnContro5 + #label5
+{
+background: url(../IMG/ACCUEIL/DRAPEAUX/drapeau-suede.png) no-repeat;
+background-size: 50%;
+position: absolute;
+height: 15%;
+width: 8%;
+left: 990px;
+top: 600px;
+display:inline-block;
+z-index: 6;
+}
+#btnContro5:checked + #label5 .diaporama5
+{
+    background-size: auto;
+	display: inline-block;
+	margin-left: -150px;
+	margin-top: -300px;
+    width: 400px;
+    height: 700px;
+    background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SWEDEN/suede-aurore.png);
+    -webkit-animation-name: diaporama5;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running ;
+
+   -moz-animation-name: diaporama5;
+    -moz-animation-duration: 10s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+
+    animation-name: diaporama5;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running ;
+    z-index: 24;
+}
+#btnContro6 + #label6
+{
+background: url(../IMG/ACCUEIL/DRAPEAUX/drapeau-usa.png) no-repeat;
+background-size: 50%;
+position: absolute;
+height: 200px;
+width: 200px;
+left: -615px;
+top: 160px;
+display:inline-block;
+z-index: 12;
+}
+#btnContro6:checked + #label6 .diaporama6
+{
+	display: inline-block;
+	margin-left: -150px;
+	margin-top: -300px;
+    width: 1300px;
+    height: 900px;
+    background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/USA/central-park.png);
+    background-size: cover;
+
+    -webkit-animation-name: diaporama6;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running ;
+
+   -moz-animation-name: diaporama6;
+    -moz-animation-duration: 10s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+
+    animation-name: diaporama6;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running ;
+    z-index: 25;
+
+}
+@keyframes diaporama1{
+    0%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SOUTH-KOREA/coree-temple.png);}
+    25%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SOUTH-KOREA/coree-tradi.png);}
+    50%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SOUTH-KOREA/coree-ville.png);}
+    75%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SOUTH-KOREA/seoul-nuit.png);}
+    99%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SOUTH-KOREA/seoul-ville.png);}
+}
+@keyframes diaporama2{
+    0%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/JAPAN/japon-fuji.png);}
+    25%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/JAPAN/japon-geisha.png);}
+    50%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/JAPAN/japon-rue.png);}
+    75%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/JAPAN/japon-sakura.png);}
+    99%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/JAPAN/japon-tokyo.png);}
+}
+@keyframes diaporama3{
+    0%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/ITALY/italie-pise.png);}
+    25%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/ITALY/italie-rome.png);}
+    50%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/ITALY/italie-trevis.png);}
+    75%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/ITALY/italie-venise.png);}
+    99%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/ITALY/italie-vespa.png);}
+}
+@keyframes diaporama4{
+    0%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SCOTLAND/ecosse-chateau.png);}
+    25%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SCOTLAND/ecosse-edimbourg.png);}
+    50%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SCOTLAND/ecosse-edimbourg2.png);}
+    75%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SCOTLAND/ecosse-nature.png);}
+    99%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SCOTLAND/ecosse-scotland.png);}
+}
+@keyframes diaporama5{
+    0%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SWEDEN/suede-aurore.png);}
+    25%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SWEDEN/suede-hiver.png);}
+    50%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SWEDEN/suede-nuit.png);}
+    75%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SWEDEN/suede-sarek.png);}
+    99%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/SWEDEN/suede-ville.png);}
+}
+@keyframes diaporama6{
+    0%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/USA/central-park.png);}
+    25%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/USA/golden-gate.png);}
+    50%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/USA/grand-canyon.png);}
+    75%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/USA/hollywood.png);}
+    99%{background-image: url(../IMG/ACCUEIL/BACKGROUND/PAYS/USA/miami.png);}
+}

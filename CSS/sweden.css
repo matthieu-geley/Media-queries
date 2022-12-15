@@ -1,0 +1,435 @@
+html{
+	padding: 0;
+	margin: 0;
+	background-color: #0E5188;
+	font-size: 25px;
+	overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'viking';
+    src: url('../FONTS/Myrkvior.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*:not(header, footer){
+	font-family: 'viking', cursive;
+	border-radius: 1.3vw;
+}
+
+h1{
+	font-family: 'lobster', cursive;
+	border-radius: 1.3vw;
+}
+
+header{
+	margin-bottom: 2vw;
+}
+
+footer{
+	margin-top: 2vw;
+}
+
+h2{
+	font-family: 'lobster', cursive;
+
+}
+
+.intro-master{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*--3 version pour faire un diapo de 5 images compatibles, certains seront utilisé plutot que d'autres en fonction des navigateurs--*/
+
+.diapo{
+	-webkit-animation-name: diapo1;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running ;
+
+   -moz-animation-name: diapo1;
+    -moz-animation-duration: 20s;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+
+	width: 50vmax;
+	height: 50vmax;
+	margin: 0 auto;
+	background: no-repeat;
+	background-image: url(../IMG/SWEDEN/background/suede1.jpg);
+	animation-name: diapo1;
+	animation-duration: 20s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;
+	display: flex;
+	justify-content: center;
+}
+
+.welcome{
+	display: flex;
+	z-index: 2;
+	position: absolute;
+	color: #fec200;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 1.3em;
+}
+
+/*--Keyframe permettant la définition des images sélectionné en fonction du temps--*/
+
+@keyframes diapo1{
+	0%{background-image: url(../IMG/SWEDEN/background/suede1.jpg);}
+	20%{background-image: url(../IMG/SWEDEN/background/suede6.jpg);}
+	40%{background-image: url(../IMG/SWEDEN/background/suede3.jpg);}
+	60%{background-image: url(../IMG/SWEDEN/background/suede4.jpg);}
+	80%{background-image: url(../IMG/SWEDEN/background/suede5.jpg);}
+}
+
+/*--dispotision grille pour les informations "Découverte de la Suède" version Bureau--*/
+
+.first-lane{
+	display: grid;
+    grid-template-rows: 1fr 0.3fr 0.7fr 0.7fr;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+    padding: 1vw;
+    margin-top: 2vw;
+    border: 50px;	
+    text-align: center;
+    background-color: #fec200;
+}
+
+.first-lane-Mbis{
+	display: none;
+}
+
+#title1{
+	grid-row: 1;
+	grid-column: 2;
+	font-size: 2em;
+	color: #0E5188;
+	
+}
+
+#one{
+	font-size: 1.5em;
+	grid-row: 3;
+	grid-column: 1;
+    background-color: #0E5188;
+    color: #fec200;
+}
+
+#two{
+	grid-row: 4;
+	grid-column: 1;
+    background-color: #0E5188;
+    color: #fec200;
+}
+
+#five{
+	font-size: 1.5em;
+	grid-column: 3;
+	grid-row: 3;
+	background-color: #0E5188;
+    color: #fec200;
+}
+
+#six{
+	grid-column: 3;
+	grid-row: 4;
+	background-color: #0E5188;
+    color: #fec200;
+}
+
+#info{
+	background-color: #0E5188;	
+	grid-row: 2;
+	width: 3vw;
+	height: auto;
+	grid-column: 1;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#map{
+	background-color: #0E5188;	
+	grid-row: 2;
+	grid-column: 3;
+	width: 3vw;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--dispotision grille pour les informations "Les lieux importants"--*/
+
+.second-lane{
+	text-align: center;
+    background-color: #b3b3b3;
+    display: grid;
+}
+.third-lane{
+    text-align: center;
+    background-color: #b3b3b3;
+    display: grid;
+}
+
+.third-laneM{
+	display: none;
+}
+
+.grid-txt{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 2vw;
+    grid-column-gap: 2vw;
+    padding: 2vw;
+}
+
+a{
+	text-decoration: underline red;
+	color: #fec200;
+}
+
+#infoed{
+	margin-top: 2vw;
+}
+
+#maped{
+	margin-top: 2vw;
+}
+#moar{
+	color: black;
+}
+
+span{
+	font-size: 1.2em;
+	color: #0e5188;
+}
+
+#txtone{
+	grid-row: 1;
+	grid-column: 1;
+}
+
+#txttwo{
+	grid-row: 2;
+	grid-column: 2;
+}
+
+#txtthree{
+	grid-row: 3;
+	grid-column: 1;
+}
+
+.imgone{
+ 	background: url("../IMG/SWEDEN/where/Stockholm.jpg");
+ 	grid-column: 2;
+ 	grid-row: 1;
+ 	background-size: cover;
+ 	 background-repeat: no-repeat;
+}
+
+.imgtwo{
+	background: url("../IMG/SWEDEN/where/Sarek.jpg");
+	grid-column: 1;
+	grid-row: 2;
+	background-size: cover;
+ 	 background-repeat: no-repeat;
+}
+
+.imgthree{
+	background: url("../IMG/SWEDEN/where/Wonder.jpg");
+	grid-row: 3;
+	grid-column: 2;
+	background-size: cover;
+ 	 background-repeat: no-repeat;
+}
+
+.second-laneM{
+	display: none;
+}
+
+/*-- ^----- Résolution pour un appareil avec une taille supérieur à 480 pixels de large au-dessus de ce commentaire -----^ --*/
+
+/*-- ----- Résolution pour un appareil avec une taille d'écran de 480 pixels maximun en-dessous de ce commentaire ----- --*/
+@media only screen and (max-width: 480px){
+
+	*{
+		font-size: 85%;
+
+	}
+
+	.diapo{
+		width: 95vmax;
+		height: 95vmax;
+	}
+	
+	.first-lane{
+		display: none;
+	}
+
+	.third-lane{
+		display: none;
+	}
+   /*-- création d'une grilleception pour un appareil mobile --*/
+	
+	.first-lane-Mbis{
+		display: grid;
+		grid-template-rows: 0.25fr 1fr;
+		grid-column: 1fr;
+	    grid-row-gap: 0.25vw;
+	    padding: 1vw;
+	    margin-top: 2vw;
+	    border: 1vw;
+	    text-align: center;
+	    background-color: #fec200;
+	}
+
+	#title1M{
+		grid-row: 1;
+		grid-column: 1;
+		font-size: 2em;
+		color: #0E5188;
+		
+	}
+
+	.first-lane-M{
+		display: grid;
+		grid-template-rows: 0.5fr 1fr 1fr;
+	    grid-template-columns: 2fr 2fr;
+	    grid-column-gap: 1vw;
+	    text-align: center;
+	    background-color: #fec200;
+	}
+	
+	#oneM{
+		font-size: 1.5em;
+		grid-row: 2;
+		grid-column: 1;
+	    background-color: #0E5188;
+	    color: #fec200;
+	}
+
+	#twoM{
+		grid-row: 3;
+		grid-column: 1;
+	    background-color: #0E5188;
+	    color: #fec200;
+	}
+
+	#fiveM{
+		font-size: 1.5em;
+		grid-column: 2;
+		grid-row: 2;
+		background-color: #0E5188;
+	    color: #fec200;
+	}
+
+	#sixM{
+		grid-column: 2;
+		grid-row: 3;
+		background-color: #0E5188;
+	    color: #fec200;
+	}
+
+	#infoM{
+		background-color: #0E5188;	
+		grid-row: 1;
+		width: 8vw;
+		height: auto;
+		grid-column: 1;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#mapM{
+		background-color: #0E5188;	
+		grid-row: 1;
+		grid-column: 2;
+		width: 8vw;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.third-laneM{
+	margin-top: 2vw;
+    text-align: center;
+    background-color: #b3b3b3;
+    display: grid;
+	}
+
+	.grid-txtM{
+		display: grid;
+		grid-template-columns: 1fr;
+	    grid-template-rows: 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr;
+	    grid-row-gap: 2vw;
+	    padding: 2vw;
+	    font-size: 1.5em;
+	}
+
+	#infoedM{
+		margin-top: 2vw;
+	}
+
+	#mapedM{
+		margin-top: 2vw;
+	}
+
+	#txtoneM{
+		grid-row: 1;
+	}
+
+	#txttwoM{
+		grid-row: 3;
+	}
+
+	#txtthreeM{
+		grid-row: 5;
+	}
+
+	.imgoneM{
+	 	background: url("../IMG/SWEDEN/where/Stockholm.jpg");
+	 	grid-row: 2;
+	 	background-size: cover;
+	 	 background-repeat: no-repeat;
+	}
+
+	.imgtwoM{
+		background: url("../IMG/SWEDEN/where/Sarek.jpg");
+		grid-row: 4;
+		background-size: cover;
+	 	 background-repeat: no-repeat;
+	}
+
+	.imgthreeM{
+		background: url("../IMG/SWEDEN/where/Wonder.jpg");
+		grid-row: 6;
+		background-size: cover;
+	 	background-repeat: no-repeat;
+	}
+
+}
