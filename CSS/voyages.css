@@ -6,32 +6,29 @@ html {
 	font-family: 'Beauty';
 	src: url(../FONTS/BeautyDemo.ttf), url(../FONTS/BeautyDemo.otf);
 }
-@font-face {
-	font-family: 'Ubuntu';
-	src: url(../FONTS/ubuntu-title-fr-1.1.ttf), url(../FONTS.Ubuntu-Title.ttf);
-}
-* {
+.texteheader {
 	font-family: 'Beauty';
 }
 
+main {
+	z-index: 2;
+}
 body {
 	margin: 0;
 	padding: 0;
 }
 header {
 	display: flex;
-	background-image: url(../IMG/HEADER/banniere2.png);
 	opacity: 0.8;
-	width: 100vw;
+	width: 15vw;
 	height: 15vw;
-
-
-}.hover1 p {
-	font-size: 2em;
+}
+.hover1 p {
+	font-size: 60px;
 	margin-top: 0;
 }
 .hover2 p {
-	font-size: 2em;
+	font-size: 60px;
 	margin-top: 0;
 }
 .flexdirection {
@@ -40,8 +37,8 @@ header {
 }
 .hover1{
 	display: flex;
-	margin-left: 20vw;
-	margin-right: 5vw;
+	margin-left: 450px;
+	margin-right: 100px;
 	padding-top: 70px;
 	color: #01b6ff;
 	z-index: 3;
@@ -53,8 +50,8 @@ header {
 	z-index: 3;
 }
 #icon1 {
-	margin-right: 5vw;
-	font-size: 1.9em;
+	margin-right: 25px;
+	font-size: 50px;
 }
 .continentnavigation {
 	display: none;
@@ -65,18 +62,22 @@ header {
 .hover1:hover .continentnavigation {
 	display: inline-block;
 	position: absolute;
-	top: 10vw;
+	top: 190px;
 	color: #ff936a;
+	z-index: 99999;
+	background-color: rgba(255, 255, 255, 0.6);
 }
 .hover2:hover .guidenavigation {
 	display: inline-block;
 	position: absolute;
-	top: 10vw;
+	top: 190px;
 	color: #ff936a;
+	z-index: 99999;
+	background-color: rgba(255, 255, 255, 0.6);
 }
 .logo {
-	width: autow;
-	height: 9vw;
+	width: auto;
+	height: 180px;
 	margin-right: 100px;
 	padding-top: 10px;
 }
@@ -98,98 +99,99 @@ header {
 
 }
 .guidenavigation li {
-	font-size: 1.2em;
+	font-size: 46px;
 	list-style: none;
 }
 .continentnavigation li {
-	font-size: 1.2em;
+	font-size: 46px;
 	list-style: none;
 }
 li {
 	font-family: 'Ubuntu';
 }
-.nuage {
-	position: absolute;
-	z-index: 1;
-	left: 15vw;
-	top: 1vw;
-	width: auto;
-	height: 5vw;
+
+footer {
+	background-color: #01b6ff;
+	height: 50px;
+	width: 100vw;
+	margin-top: 8px;
 }
-.nuage2 {
+.footertxt {
+	font-size: 50px;
+	padding-left: 100px;
+	font-family: fantasy;
+}
+
+@media screen and (min-width: 480px) {
+	.mobileheader {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.deskheader {
+		display: none;
+	}
+
+
+	.header{
+		width: 35vw;
+		height: 35vw;
+	}
+	
+	.mobileheader {
+		margin-left: 0;
+		width: 50vw;
+display: flex;
+flex-direction: column;
+align-content: center;
+  }	
+  .hover1 {
+	margin-left: 0;
+	width: 10vw;
+  }
+  .hover2 {
+	margin-left: 0;
+	width: 10vw;
+	padding: 0;
+  }
+  .hover1:hover .continentnavigation {
+	display: block;
 	position: absolute;
-	z-index: 1;
-	left: 75vw;
-	top: 2vw;
-	width: auto;
-	height: 5vw;
+	left: 50vw;
+}
+.continentnavigation li {
+	font-size: 2em;
+	list-style: none;
+	display: block;
+    width: 20vw;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+}
+.hover2:hover .guidenavigation {
+	display: block;
+	position: absolute;
+	left: 50vw;
+}
+.guidenavigation li {
+	font-size: 2em;
+	list-style: none;
+	display: block;
+    width: 20vw;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
 }
 footer {
 	background-color: #01b6ff;
-	height: 2vw;
-	width: 100vw;
-	margin-top: -2vw;
+	height: 15vh;
+	padding-top: 5vh;
+	margin-top: -5vh;
 }
 .footertxt {
-	font-size: 1.1em;
-	padding-left: 3vw;
+	font-size: 2em;
+	padding-left: 0;
 	font-family: fantasy;
 }
-button::before {
-content: '';
-  border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
-  border: 6px solid #01b6ff;
-  box-shadow: 0 0 60px rgba(0,255,203,.64);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all .3s ease-in-out 0s;
 }
-
-button:hover, button:focus {
-  color: #01b6ff;
-  transform: translateY(-6px);
-}
-
-button:hover::before, button:focus::before {
-  opacity: 1;
-}
-
-button::after {
-  content: '';
-  width: 30px; height: 30px;
-  border-radius: 100%;
-  border: 6px solid #01b6ff;
-  position: absolute;
-  z-index: 2;
-  top: 10%;
-  left: 51%;
-  transform: translate(-50%, -50%);
-  animation: ring 1.5s infinite;
-}
-
-button:hover::after, button:focus::after {
-  animation: none;
-  display: none;
-}
-
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
-}
-button {
-	background-color: transparent;
-	border: none;
-} 	
